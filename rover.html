@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+  <header>
+    <title>Rover</title>
+    <meta charset="utf-8">
+    <style>
+      table{
+        border:1px solid black;
+        margin:3px 0;
+      }
+      button{
+        font-size: 14px;
+      }
+      button.red{
+        background-color: red;
+      }
+    </style>
+  </header>
+<body onload="init()">
+  <h1>Rover</h1>
+  <fieldset>
+      <legend>Results:</legend>
+      <textarea id="txtResults" readonly rows="5" value=""></textarea><br>
+      <button id="btnRun" class="red" onclick="run()">RUN</button><br>
+      <button id="btnReset" onclick="reset()">RESET</button>
+      <button id="btnAddCase" onclick="addCase()">ADD Case</button>
+    </fieldset>
+  <table>
+      <tr>
+      <td>input1 (upper-right coordinates)</td>
+      <td><input id="maxCoordinates" type="text" value="5 5"></td>
+      </tr>
+  </table>  
+
+  <table>
+    <tr><td>Input2 (start coordinates)</td>
+    <td><input id="txtStartCoordinates1" class="startCoordinates" type="text" ></td>
+    </tr>
+    <tr><td>Input3 (movement)</td>
+      <td><input id="txtMovement1" class="movement" type="text"></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr><td>Input2 (start coordinates)</td>
+    <td><input id="txtStartCoordinates2" class="startCoordinates" type="text"></td>
+    </tr>
+    <tr><td>Input3 (movement)</td>
+      <td><input id="txtMovement2" class="movement" type="text"></td>
+    </tr>
+  </table>
+
+  <div id="divInputs"></div>
+
+
+<script src="app_rover.js"></script>
+
+</body>
+</html>
